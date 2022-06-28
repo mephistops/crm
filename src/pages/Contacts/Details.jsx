@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { Dock } from "../../components/Dock";
-import { DelTask, GetComments, GetOneContact, GetOneGender, GetTasks, GetUser, SetCommentDB } from "../../services/methods";
+import { DelComment, DelTask, GetComments, GetOneContact, GetOneGender, GetTasks, GetUser, SetCommentDB } from "../../services/methods";
 import moment from "moment";
 
 export const Details = () => {
@@ -19,9 +19,9 @@ export const Details = () => {
   }
 
   const onDelete = (e) => {
-    DelTask(e).then(res=>{
+    DelTask(e).then(res => {
       alert("Tarea Eliminada")
-      window.location.href = "/contacts/details/"+params.id
+      window.location.href = "/contacts/details/" + params.id
     })
   }
 
@@ -61,6 +61,13 @@ export const Details = () => {
     } else {
       alert("Comentario vacío")
     }
+  }
+
+  const delComment = (e) => {
+    DelComment(e).then((res) => {
+      alert("Comentario Eliminado")
+      window.location.href = "/contacts/details/" + params.id;
+    })
   }
   return (
     <>
@@ -135,10 +142,14 @@ export const Details = () => {
 
                           <div className="row text-center">
                             <div className="offset-6 col-2">
-                              <i className="bi bi-pencil-fill text-primary"></i>
+                              <Link to={`/comments/edit/${element.id}/${contact.id}`}>
+                                <i className="bi bi-pencil-fill text-primary"></i>
+                              </Link>
                             </div>
                             <div className="col-2">
-                              <i className="bi bi-trash-fill text-primary"></i>
+                              <div onClick={() => { delComment(element.id) }}>
+                                <i className="bi bi-trash-fill text-primary"></i>
+                              </div>
                             </div>
                             <div className="col-2">
                               <i className="bi bi-pin-fill text-secondary"></i>
@@ -187,10 +198,12 @@ export const Details = () => {
 
                           <div className="row text-center">
                             <div className="offset-8 col-2">
-                              <i className="bi bi-pencil-fill text-primary"></i>
+                              <Link to={`/tasks/edit/${contact.id}/${element.id}/`}>
+                                <i className="bi bi-pencil-fill text-primary"></i>
+                              </Link>
                             </div>
                             <div className="col-2">
-                              <div onClick={() => {onDelete(element.id)}}>
+                              <div onClick={() => { onDelete(element.id) }}>
                                 <i className="bi bi-trash-fill text-primary"></i>
                               </div>
                             </div>

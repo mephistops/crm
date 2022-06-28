@@ -40,8 +40,16 @@ export const GetComments = (id) => {
   return instance.get(`/comments/?contact_id=${id}`)
 }
 
+export const GetComment = (id) => {
+  return instance.get(`/comment/?id_comment=${id}`)
+}
+
 export const GetTasks = (id) => {
   return instance.get(`/tasks/?id_contact=${id}`)
+}
+
+export const GetTask = (id) => {
+  return instance.get(`/task/?id_task=${id}`)
 }
 
 export const SetTask = (task) => {
@@ -66,4 +74,12 @@ export const GetUsers = () => {
 
 export const SetCommentDB = (comment) => {
   return instance.post(`/comments/`, comment)
+}
+
+export const PutComment = (comment) => {
+  return instance.put(`/comments/`, comment)
+}
+
+export const DelComment = (id) => {
+  return instance.delete(`/comments/${id}`)
 }

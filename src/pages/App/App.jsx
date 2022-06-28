@@ -14,6 +14,7 @@ export const App = () => {
       <div className="container-fluid">
         <BrowserRouter>
           <Routes>
+            <Route path="/" element={<Contacts />} />
             <Route path="/contacts" element={<Contacts />} />
             <Route path="/contacts/edit/:id" element={<Edit />} />
             <Route path="/contacts/details/:id" element={<Details />} />

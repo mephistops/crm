@@ -31,7 +31,7 @@ export const EditTask = () => {
       setUsers(res.data)
     })
 
-    GetTask(params.id).then((res) => {
+    GetTask(params.id_task).then((res) => {
       setTask({
         id: res.data.id,
         title: res.data.title,

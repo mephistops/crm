@@ -5,7 +5,7 @@ export const Header = (props) => {
       {props.search &&
         <div className="input-group">
           <input type="text" style={{ backgroundColor: "#F6F6F6" }} className="form-control border-0 p-3 rounded-left" placeholder="Buscar" />
-          <span class="input-group-text rounded-right border-0 text-primary" style={{ backgroundColor: "#F6F6F6" }} id="addon-wrapping">
+          <span className="input-group-text rounded-right border-0 text-primary" style={{ backgroundColor: "#F6F6F6" }} id="addon-wrapping">
             <i className="bi bi-search"></i>
           </span>
         </div>

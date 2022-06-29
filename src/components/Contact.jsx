@@ -47,14 +47,14 @@ export const Contact = (props) => {
           </Link>
         </div>
         <div className="col-2 p-2">
-          <div class="dropdown">
-            <span class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+          <div className="dropdown">
+            <span className="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
               <i className="bi bi-check-circle-fill fs-4 text-primary"></i>
             </span>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
               <li className="row" onClick={() => { add('call') }}>
                 <div className="col-6">
-                  <span class="dropdown-item small">Llamada telefónica</span>
+                  <span className="dropdown-item small">Llamada telefónica</span>
                 </div>
                 <div className="col-5 text-end">
                   <i className="bi bi-telephone-fill text-primary"></i>
@@ -62,7 +62,7 @@ export const Contact = (props) => {
               </li>
               <li className="row" onClick={() => { add('msg') }}>
                 <div className="col-6">
-                  <a class="dropdown-item small" href="#">Mensaje de texto</a>
+                  <a className="dropdown-item small" href="#">Mensaje de texto</a>
                 </div>
                 <div className="col-5 text-end">
                   <i className="bi bi-chat-left-text-fill text-primary"></i>
@@ -70,7 +70,7 @@ export const Contact = (props) => {
               </li>
               <li className="row" onClick={() => { add('callWhatsAPP') }}>
                 <div className="col-6">
-                  <a class="dropdown-item small" href="#">Llamada por Whatsapp</a>
+                  <a className="dropdown-item small" href="#">Llamada por Whatsapp</a>
                 </div>
                 <div className="col-5 text-end">
                   <i className="bi bi-whatsapp text-success"></i>
@@ -78,7 +78,7 @@ export const Contact = (props) => {
               </li>
               <li className="row" onClick={() => { add('msgWhatsAPP') }}>
                 <div className="col-6">
-                  <a class="dropdown-item small" href="#">Mensaje de Whatsapp</a>
+                  <a className="dropdown-item small" href="#">Mensaje de Whatsapp</a>
                 </div>
                 <div className="col-5 text-end">
                   <i className="bi bi-whatsapp text-success"></i>

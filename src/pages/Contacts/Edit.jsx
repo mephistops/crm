@@ -83,7 +83,7 @@ export const Edit = () => {
               <div className="col-12 mb-3">
                 <div className="input-group">
                   <input type="text" value={firstname} onChange={(e) => { setFirstname(e.target.value) }} className="form-control border-0 p-3 rounded-left" placeholder="Nombres" />
-                  <span class="input-group-text rounded-right border-0 text-primary" style={{ backgroundColor: "#fff" }} id="addon-wrapping">
+                  <span className="input-group-text rounded-right border-0 text-primary" style={{ backgroundColor: "#fff" }} id="addon-wrapping">
                     <i className="bi bi-pencil-fill"></i>
                   </span>
                 </div>
@@ -92,7 +92,7 @@ export const Edit = () => {
               <div className="col-12 mb-3">
                 <div className="input-group">
                   <input type="text" value={lastname} onChange={(e) => { setLastname(e.target.value) }} className="form-control border-0 p-3 rounded-left" placeholder="Apellidos" />
-                  <span class="input-group-text rounded-right border-0 text-primary" style={{ backgroundColor: "#fff" }} id="addon-wrapping">
+                  <span className="input-group-text rounded-right border-0 text-primary" style={{ backgroundColor: "#fff" }} id="addon-wrapping">
                     <i className="bi bi-pencil-fill"></i>
                   </span>
                 </div>
@@ -101,7 +101,7 @@ export const Edit = () => {
               <div className="col-12 mb-3">
                 <div className="input-group">
                   <input type="text" value={mail} onChange={(e) => { setMail(e.target.value) }} className="form-control border-0 p-3 rounded-left" placeholder="E-mail" />
-                  <span class="input-group-text rounded-right border-0 text-primary" style={{ backgroundColor: "#fff" }} id="addon-wrapping">
+                  <span className="input-group-text rounded-right border-0 text-primary" style={{ backgroundColor: "#fff" }} id="addon-wrapping">
                     <i className="bi bi-pencil-fill"></i>
                   </span>
                 </div>
@@ -119,7 +119,7 @@ export const Edit = () => {
               <div className="col-12 mb-3">
                 <div className="input-group">
                   <input type="text" value={phone} onChange={(e) => { setPhone(e.target.value) }} className="form-control border-0 p-3 rounded-left" placeholder="Tel/Cel" />
-                  <span class="input-group-text rounded-right border-0 text-primary" style={{ backgroundColor: "#fff" }} id="addon-wrapping">
+                  <span className="input-group-text rounded-right border-0 text-primary" style={{ backgroundColor: "#fff" }} id="addon-wrapping">
                     <i className="bi bi-pencil-fill"></i>
                   </span>
                 </div>
@@ -132,7 +132,7 @@ export const Edit = () => {
               <div className="col-12 mb-3">
                 <div className="input-group">
                   <input type="text" value={address} onChange={(e) => { setAddress(e.target.value) }} className="form-control border-0 p-3 rounded-left" placeholder="Dirección" />
-                  <span class="input-group-text rounded-right border-0 text-primary" style={{ backgroundColor: "#fff" }} id="addon-wrapping">
+                  <span className="input-group-text rounded-right border-0 text-primary" style={{ backgroundColor: "#fff" }} id="addon-wrapping">
                     <i className="bi bi-pencil-fill"></i>
                   </span>
                 </div>
